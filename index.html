@@ -4,29 +4,60 @@
     <meta charset="UTF-8">
     <title>我的个人主页</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: "Microsoft YaHei";
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
+            font-family: "Microsoft YaHei", system-ui;
+            background-color: #f5f7fa;
+            color: #2d3748;
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 85, 204, 0.1);
+            text-align: center;
         }
         h1 {
             color: #0055cc;
+            font-size: 32px;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
         }
-        /* 给照片设置大小，不会太大 */
         .myphoto{
-            width: 220px;
-            border-radius: 8px; /* 圆角好看，删掉这行就是直角 */
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .myphoto:hover {
+            transform: scale(1.03);
+        }
+        p {
+            font-size: 17px;
+            line-height: 2.2;
+            margin: 8px 0;
+        }
+        .info-box {
+            margin-top: 10px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
         }
     </style>
 </head>
 <body>
     <h1>个人主页</h1>
-    <!-- 这里插入照片，把photo.jpg换成你上传的图片文件名 -->
     <img class="myphoto" src="IMG_4694.jpeg" alt="个人照片">
-    <p>姓名：丹珍卓嘎    </p>
-    <p>专业：医学技术</p>
-    <p>家乡：西藏拉萨</p>
-    <p>兴趣：旅游，摄影，画画</p>
+    <div class="info-box">
+        <p>姓名：丹珍卓嘎</p>
+        <p>专业：医学技术</p>
+        <p>家乡：西藏拉萨</p>
+        <p>兴趣：旅游，摄影，画画</p>
+        <p>年级：24级</p>
+    </div>
 </body>
 </html>
